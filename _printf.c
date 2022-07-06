@@ -23,7 +23,10 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			if (format[i] == '%')
+			{
 				_putchar('%');
+				counter++;
+			}
 			else
 			{
 				counter += get_func(format[i])(arg);
@@ -31,5 +34,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(arg);
-	return (1);
+	return (counter);
 }

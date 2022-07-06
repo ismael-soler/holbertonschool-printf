@@ -10,7 +10,7 @@ int form_c(va_list a)
 {
 	if (a)
 		_putchar(a);
-	return (a);
+	return (1);
 }
 
 /**

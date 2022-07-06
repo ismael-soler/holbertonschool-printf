@@ -34,7 +34,12 @@ int form_s(va_list arg)
 		a = va_arg(arg, char *);
 		if (a == NULL)
 		{
-			_putchar('\0');
+			_putchar('(');
+			_putchar('n');
+			_putchar('u');
+			_putchar('l');
+			_putchar('l');
+			_putchar(')');
 			return (6);
 		}
 		for (i = 0; a[i]; i++)

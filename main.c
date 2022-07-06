@@ -1,15 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
  * main - Entry point
  *
- * Return: Always 0
+ * Return: 0 on success, error code otherwise
  */
-
 int main(void)
 {
-	char *saludo = "holaaa";
+	int len, len2;
 
-	_printf("jajuitas %c %s %%\n", 'a', saludo);
+	len = _printf(NULL);
+	len2 = printf(NULL);
+	fflush(stdout);
+	if (len != len2)
+	{
+		printf("Lengths differ.\n");
+		fflush(stdout);
+		return (1);
+	}
 	return (0);
 }

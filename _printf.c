@@ -29,6 +29,8 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				counter++;
 			}
+			else if (format[i] == '\0')
+				return (-1);
 			else
 			{
 				counter += get_func(format[i])(arg);

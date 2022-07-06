@@ -18,5 +18,5 @@ int (*get_func (char c))(va_list arg)
 	for (i = 0; i < 3; i++)
 		if (ff[i].form[0] == c)
 			return (ff[i].f);
-	return (NULL);
+	return (0);
 }

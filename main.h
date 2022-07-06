@@ -6,7 +6,7 @@
 
 typedef struct form
 {
-	char *form
+	char *form;
 	int (*f)(va_list arg);
 } form_t;
 

@@ -9,7 +9,7 @@
 int form_c(va_list a)
 {
 	if (a)
-		_putchar(a);
+		_putchar(a + '0');
 	return (1);
 }
 
@@ -24,6 +24,6 @@ int form_s(va_list a)
 	int i;
 
 	for (i = 0; a[i]; i++)
-		_putchar(a[i]);
+		_putchar(a[i] + '0');
 	return (i - 1);
 }

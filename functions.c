@@ -6,10 +6,15 @@
  * Return: length of printed argument
  */
 
-int form_c(va_list a)
+int form_c(va_list arg)
 {
-	if (a)
-		_putchar(a + '0');
+	int a;
+
+	if (arg)
+	{
+		a = va_arg(arg, int);
+		_putchar(a);
+	}
 	return (1);
 }
 
@@ -19,11 +24,17 @@ int form_c(va_list a)
  * Return: length of printed argument
  */
 
-int form_s(va_list a)
+int form_s(va_list arg)
 {
 	int i;
+	char *a;
 
-	for (i = 0; a[i]; i++)
-		_putchar(a[i] + '0');
-	return (i - 1);
+	if (arg)
+	{
+		a = va_arg(arg, char *);
+		for (i = 0; a[i]; i++)
+			_putchar(a[i]);
+		return (i - 1);
+	}
+	return (0);
 }

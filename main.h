@@ -10,9 +10,9 @@ typedef struct form
 	int (*f)(va_list arg);
 } form_t;
 
-	int (*get_func(char *c))(va_list arg);
+	int (*get_func(char c))(va_list arg);
 	int _putchar(char c);
 	int _printf(const char *format, ...);
-	int form_c(va_list a);
-	int form_s(va_list);
+	int form_c(va_list arg);
+	int form_s(va_list arg);
 #endif

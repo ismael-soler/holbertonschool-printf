@@ -1,0 +1,29 @@
+#include "main.h"
+
+/**
+ * form_c - prints in %c format
+ * @a: argument to print
+ * Return: length of printed argument
+ */
+
+int form_c(va_list a)
+{
+	if (a)
+		_putchar(a);
+	return (a);
+}
+
+/**
+ * form_s - prints in %s format
+ * @a: argument to print
+ * Return: length of printed argument
+ */
+
+int form_s(va_list a)
+{
+	int i;
+
+	for (i = 0; a[i]; i++)
+		_putchar(a[i]);
+	return (i - 1);
+}

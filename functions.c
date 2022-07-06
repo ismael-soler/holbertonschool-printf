@@ -34,7 +34,7 @@ int form_s(va_list arg)
 		a = va_arg(arg, char *);
 		for (i = 0; a[i]; i++)
 			_putchar(a[i]);
-		return (i - 1);
+		return (i);
 	}
 	return (0);
 }

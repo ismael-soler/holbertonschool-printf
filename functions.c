@@ -2,7 +2,7 @@
 
 /**
  * form_c - prints in %c format
- * @a: argument to print
+ * @arg: argument to print
  * Return: length of printed argument
  */
 
@@ -20,7 +20,7 @@ int form_c(va_list arg)
 
 /**
  * form_s - prints in %s format
- * @a: argument to print
+ * @arg: argument to print
  * Return: length of printed argument
  */
 

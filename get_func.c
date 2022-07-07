@@ -6,16 +6,15 @@
  * Return: pointer to function or NULL
  */
 
-int (*get_func (char c))(va_list arg)
+int (*get_func(char c))(va_list arg)
 {
 	form_t ff[] = {
 		{"c", form_c},
 		{"s", form_s},
-		{NULL, NULL}
 	};
-
 	int i;
-	for (i = 0; i < 3; i++)
+
+	for (i = 0; i < 2; i++)
 		if (ff[i].form[0] == c)
 			return (ff[i].f);
 	return (0);

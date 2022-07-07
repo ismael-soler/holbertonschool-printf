@@ -29,12 +29,19 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				counter++;
 			}
-			else if (format[i] == '\0')
-				return (-1);
-			else
+			else if (format[i] != '\0')
 			{
-				counter += get_func(format[i])(arg);
+				if (get_func(format[i]))
+					counter += get_func(format[i])(arg);
+				else if (get_func(format[i]) == 0)
+				{
+					_putchar('%');
+					_putchar(format[i]);
+					counter += 2;
+				}
 			}
+			else
+				return (-1);
 		}
 	}
 	va_end(arg);

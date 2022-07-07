@@ -83,3 +83,8 @@ int form_d(va_list arg)
 	}
 	return (cuenta);
 }
+
+int form_i(va_list arg)
+{
+	return (form_d(arg));
+}

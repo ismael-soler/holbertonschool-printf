@@ -16,4 +16,5 @@ typedef struct form
 	int _printf(const char *format, ...);
 	int form_c(va_list arg);
 	int form_s(va_list arg);
+	int form_d(va_list arg);
 #endif

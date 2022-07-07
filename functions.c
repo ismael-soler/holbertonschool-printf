@@ -48,3 +48,38 @@ int form_s(va_list arg)
 	}
 	return (0);
 }
+
+/** form_d - prints in %d format.
+ * @arg: argument to print.
+ * Return: an integrer.
+ */
+
+int form_d(va_list arg)
+{
+	unsigned int abs, aux, num, cuenta;
+	int n;
+
+	cuenta = 0;
+	n = va_arg(arg, int);
+	if (n < 0)
+	{
+		abs = (n * -1);
+		cuenta += _putchar('-');
+	}
+	else
+		abs = n;
+
+	aux = abs;
+	num = 1;
+	while (aux > 9)
+	{
+		aux /= 10;
+		num *= 10;
+	}
+	while (num >= 1)
+	{
+		cuenta += _putchar(((abs / num) % 10) + '0');
+		num /= 10;
+	}
+	return (cuenta);
+}

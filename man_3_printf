@@ -12,7 +12,7 @@ The format string is a character type string. It's composed of zero or more dire
 .sp 1
 The syntax for a conversion specification is the following:
 .sp 1
-	%[conversion specification]
+	%[format description character]
 .sp 1
 The type of the arguments must correspond properly with the conversion specificer. Arguments are used in the given order. Each conversion specifier will ask for the next argument. Enough arguments must be given for each converion specifier, if there are more arguments than conversion specificer they will be ignored.
 .SS Conversion specifiers

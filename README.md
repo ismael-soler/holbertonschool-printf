@@ -34,7 +34,7 @@ Every format specification starts with a percentage sign and ends with a letter.
 | %s        | Print a string of characters |
 | %d        | Print a decimal (base 10) number|
 | %i        | Print an integer in base 10|
-
+| %%        | Print a percentage sign|
 
 ## Important files
 

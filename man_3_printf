@@ -1,0 +1,32 @@
+.TH _printf 3 "8 July 22"
+.SH NAME
+_printf /- prints text according to format
+.SH SYNOPSIS
+#include "main.h"
+int _printf(const char *format, ...);
+.SH DESCRIPTION
+[printf te printea piola rey]
+.SS Format of the format string
+[descrpcion de la string format]
+.SS Conversion specifiers
+A character that specifies the type of conversion to be applied.  The conversion specifiers and their meanings are:
+.TP
+.BR d
+prints decimals
+.TP
+.BR i
+prints integrers
+.TP
+.BR c
+prints characters
+.TP
+.BR s
+prints strings
+.TP
+.BR %
+prints a percentage sign (%)
+
+.SH RETURN VALUE
+[el return value va a ser la cantidad djsidfa]
+.ta al lado
+

@@ -1,6 +1,6 @@
 
 # Our _printf()
-This Repository had all functions to make _printf() works correctly. _printf() its a custom function based on printf() function from <stdio.h> library.
+This Repository has all functions to make _printf() work correctly. _printf() its a custom function based on printf() from <stdio.h> library.
  
 
 ## Prototype
@@ -10,7 +10,7 @@ This Repository had all functions to make _printf() works correctly. _printf() i
 ```
     
 ## Description
-_printf() is a variadic function that take an argument called "format" that is a string and also a variable list of arguments. This string can display formatted variables and special control characters, such as new lines (‘\n’), backspaces (‘\b’) and tabspaces (‘\t’). Conversion control characters describe the format of how the message string uses the other arguments. If printf() contains more than one argument then the format of the output is defined using a percent (%) character followed by a format description character
+_printf() is a variadic function that takes an string argument called "format" and also a variable list of arguments. This string can display formatted variables and special control characters, such as new lines (‘\n’), backspaces (‘\b’) and tabspaces (‘\t’). Conversion specification characters are used to specify the format on which the program should print. If _printf() contains more than one argument then the format of the output is defined using a percent (%) character followed by a format description character
 ## Requirements
 
 - Allowed editors: `vi`, `vim`, `emacs`

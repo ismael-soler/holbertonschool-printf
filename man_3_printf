@@ -33,3 +33,5 @@ A \'%\' is written. No argument is converted. The complete conversion specificat
 Upon successful return, _printf() will return the number of characters printed (excluding the null byte used to end output to strings).
 .sp 1
 If an output error is encountered, a negative value is returned.
+.SH AUTHORS
+Written by Ismael Soler and Santiago Alves

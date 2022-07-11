@@ -1,6 +1,6 @@
 
 # Our _printf()
-This Repository had all functions to make _printf() works correctly. _printf() its a custom function based on printf() function from <stdio.h> library.
+This Repository has all functions to make _printf() work correctly. _printf() its a custom function based on printf() from <stdio.h> library.
  
 
 ## Prototype
@@ -10,7 +10,7 @@ This Repository had all functions to make _printf() works correctly. _printf() i
 ```
     
 ## Description
-_printf() is a variadic function that take an argument called "format" that is a string and also a variable list of arguments. This string can display formatted variables and special control characters, such as new lines (‘\n’), backspaces (‘\b’) and tabspaces (‘\t’). Conversion control characters describe the format of how the message string uses the other arguments. If printf() contains more than one argument then the format of the output is defined using a percent (%) character followed by a format description character.
+_printf() is a variadic function that takes an string argument called "format" and also a variable list of arguments. This string can display formatted variables and special control characters, such as new lines (‘\n’), backspaces (‘\b’) and tabspaces (‘\t’). Conversion specification characters are used to specify the format on which the program should interpret the given arguments. If _printf() contains more than one argument then the format of the output is defined using a percentage (%) character followed by a format description character
 
 
 
@@ -25,12 +25,12 @@ _printf() is a variadic function that take an argument called "format" that is a
 
 ## Format Specifiers
 
-Every format specification starts with a percent sign and ends with a letter. Here is a list:
+Every format specification starts with a percentage sign and ends with a letter. Here is a list:
 
 
 |  %        | Description                |
 | :-------- | :------------------------- |
-| %c        | Print single character |
+| %c        | Print a single character |
 | %s        | Print a string of characters |
 | %d        | Print a decimal (base 10) number|
 | %i        | Print an integer in base 10|
@@ -38,10 +38,10 @@ Every format specification starts with a percent sign and ends with a letter. He
 
 ## Important files
 
-- [_printf.c](https://github.com/ismael-soler/holbertonschool-printf/blob/master/_printf.c) - Here is the main code.
-- [functions.c](https://github.com/ismael-soler/holbertonschool-printf/blob/master/functions.c) - Store all the functions that _printf() uses.
-- [get_func.c](https://github.com/ismael-soler/holbertonschool-printf/blob/master/get_func.c) - Store the structure with the functions.
-- [main.h](https://github.com/ismael-soler/holbertonschool-printf/blob/master/main.h) - Contains all the prototypes.
+- [_printf.c](https://github.com/ismael-soler/holbertonschool-printf/blob/master/_printf.c) - Main code.
+- [functions.c](https://github.com/ismael-soler/holbertonschool-printf/blob/master/functions.c) - Auxiliar functions.
+- [get_func.c](https://github.com/ismael-soler/holbertonschool-printf/blob/master/get_func.c) - Gets the necessary auxiliar function from functions.c.
+- [main.h](https://github.com/ismael-soler/holbertonschool-printf/blob/master/main.h) - Main header.
 - [man_3_printf](https://github.com/ismael-soler/holbertonschool-printf/blob/master/man_3_printf) - Man page for our _printf().
 ## Authors
 

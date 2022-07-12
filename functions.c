@@ -49,7 +49,8 @@ int form_s(va_list arg)
 	return (0);
 }
 
-/** form_d - prints in %d format.
+/**
+ * form_d - prints in %d format.
  * @arg: argument to print.
  * Return: an integrer.
  */
@@ -83,6 +84,12 @@ int form_d(va_list arg)
 	}
 	return (cuenta);
 }
+
+/**
+ * form_i - prints in %i format
+ * @arg: argument to print
+ * Return: an int
+ */
 
 int form_i(va_list arg)
 {

@@ -1,24 +1,16 @@
+#include <limits.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
  * main - Entry point
  *
- * Return: 0 on success, error code otherwise
+ * Return: Always 0
  */
 int main(void)
 {
-	int len, len2;
 
-	len = _printf("%i - %i = %i\n", 1024, 2048, -1024);
-	len2 = printf("%i - %i = %i\n", 1024, 2048, -1024);
-	fflush(stdout);
-	if (len != len2)
-	{
-		printf("Lengths differ.\n");
-		fflush(stdout);
-		return (1);
-	}
+	_printf("hello %s %c\n", "ola");
+	printf("hello %s %c\n", "ola");
 	return (0);
 }

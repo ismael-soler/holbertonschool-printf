@@ -1,9 +1,0 @@
-CFLAGS = -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format
-CC = gcc
-SRC = _printf.c _putchar.c functions.c get_func.c main.c
-OBJ = $(SRC:.c=.o)
-RM = rm -f
-
-main: $(SRC)
-	gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format $(SRC)
-
